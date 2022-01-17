@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arcs Command</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <svg width="500" height="500">
+    <path d="M150,150 A100,50 0 0,1 150,300" style="stroke: blue; stroke-width:2; fill:none;" />
+    <path d="M150,150 A100,50 0 0,0 150,300" style="stroke: red; stroke-width:2; fill:none;" />
+
+    <!-- Ax-radius, y-radius x-axis-rotation large-arc-flag, 
+      sweep-flag x-position, y-position-->
+    <!-- sweep-flag -direction of the arc 
+    0 - anti-clockwise, 1 - clockwise-->
+    <!-- large-arc-flag  --- size of the arc 
+    -> 0 = smallest, 1 = largest -->
+  </svg>
+
+</body>
+
+</html>
