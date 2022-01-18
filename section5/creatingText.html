@@ -23,8 +23,16 @@
       text-anchor:start; font-size:45px; letter-spacing:5; writing-mode:tb;">This is my
       text</text> -->
     <!-- dikey yazı - writing-mode:tb; -- top to bottom -->
-    <text x="50" y="100" style="stroke:black; stroke-width:2; fill:red; direction:rtl;">This is my
-      text</text>
+    
+    <!-- <text x="100" y="100" style="stroke:black; stroke-width:2; fill:red; direction:rtl; unicode-bidi:bidi-override;">This is my
+      text</text> -->
+      <!-- The unicode-bidi property is used together with the direction property to set or return 
+        whether the text should be overridden to support multiple languages in the same document. -->
+
+        <text x="100" y="50" style="stroke: black; stroke-width:2; font-size:45px;">
+          <tspan>Text1</tspan>
+          <tspan x="100" y="100">Text2</tspan>
+        </text>
 
 
   </svg>
