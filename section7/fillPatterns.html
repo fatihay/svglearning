@@ -10,11 +10,19 @@
 <body>
     <svg width="500" height="500">
         <defs>
-            <pattern id="circles" x="10" y="10" width="10" height="10" patternUnits="userSpaceOnUse">
+            <!-- <pattern id="circles" x="10" y="10" width="10" height="10" patternUnits="userSpaceOnUse">
                 <circle cx="5" cy="5" r="5" style="stroke: none; fill:red;" />
+            </pattern> -->
+
+            <pattern id="sqs" x="4" y="4" width="4" height="4" patternUnits="userSpaceOnUse">
+                <rect x="0" y="0" width="2" height="2" style="stroke: blue; fill:blue;"/>
+            </pattern> 
+            <pattern id="circles" x="10" y="10" width="20" height="20" patternUnits="userSpaceOnUse">
+                <circle cx="10" cy="10" r="10" style="stroke: red; fill:url(#sqs)"            />
             </pattern>
         </defs>
 
+        <!-- <rect x="50" y="50" width="100" height="100" style="stroke: blue; stroke-width:2; fill:url(#circles);"  /> -->
         <rect x="50" y="50" width="100" height="100" style="stroke: blue; stroke-width:2; fill:url(#circles);"  />
 
 
