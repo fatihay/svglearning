@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clip Paths</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <svg width="500" height="500">
+    <!-- <clipPath id="circles">
+      <circle cx="70" cy="70" r="50" />
+    </clipPath> -->
+    <!-- Burada style kullanmıyoruz -->
+
+    <!-- <clipPath id="paths">
+      <path d="M100,50 L150,100 L100,150 L50,100 L100,50" />
+    </clipPath> -->
+
+    <defs>
+      <clipPath id="groups">
+        <!-- <rect x="50" y="85" width="100" height="30" /> -->
+        <text x="50" y="100" style="font-size: 30px;">Hello!</text>
+      </clipPath>
+    </defs>
+
+    <g style="clip-path: url(#groups);">
+      <rect x="50" y="50" width="100" height="100" style="stroke: blue; stroke-width:2" fill="red" />
+      <circle cx="100" cy="100" r="25" style="fill: green;" />
+    </g>
+
+    <!-- <rect x="50" y="50" width="100" height="100"
+      style="stroke: blue; stroke-width: 2; fill: red; clip-path:url(#circles)" /> -->
+    <!-- 
+    <rect x="50" y="50" width="100" height="100"
+      style="stroke: blue; stroke-width: 2; fill: red; clip-path:url(#paths)" />
+    <circle cx="100" cy="100" r="50" style="stroke: red; stroke-width: 2; fill: blue; clip-path:url(#paths)" /> -->
+
+  </svg>
+
+</body>
+
+</html>
